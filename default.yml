@@ -25,7 +25,6 @@ profile:
     tracing: true
 
 rules:
-    - 'DOMAIN,bestlab.top,mode-select'
     - 'IP-CIDR,162.159.245.133/32,DIRECT'
     - 'IP-CIDR,104.16.112.76/32,DIRECT'
     - 'IP-CIDR,104.18.5.46/32,DIRECT'
@@ -48,6 +47,7 @@ rules:
     - 'DOMAIN-SUFFIX,digicert.com,mode-select'
     - 'DOMAIN,ocsp.apple.com,mode-select'
     - 'DOMAIN,test.inhust.top,mode-select'
+    - 'DOMAIN,bestlab.top,mode-select'
     - 'DOMAIN,ocsp.comodoca.com,mode-select'
     - 'DOMAIN,ocsp.usertrust.com,mode-select'
     - 'DOMAIN,ocsp.sectigo.com,mode-select'
