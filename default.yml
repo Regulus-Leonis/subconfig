@@ -46,6 +46,7 @@ rules:
     - 'DOMAIN,developer.apple.com,mode-select'
     - 'DOMAIN-SUFFIX,digicert.com,mode-select'
     - 'DOMAIN,ocsp.apple.com,mode-select'
+    - 'DOMAIN,test.inhust.top,mode-select'
     - 'DOMAIN,ocsp.comodoca.com,mode-select'
     - 'DOMAIN,ocsp.usertrust.com,mode-select'
     - 'DOMAIN,ocsp.sectigo.com,mode-select'
