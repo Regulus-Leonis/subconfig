@@ -23,7 +23,14 @@ clash-for-android:
     append-system-dns: false
 profile:
     tracing: true
-
+proxy-groups:
+    - { name: mode-select, type: select, proxies: [hust-select, third-party-to-us, shanghai-to-us, shiyan-to-us] }
+    - { name: hust-select, type: select, use: [hust] }
+    - { name: third-party-select, use: [third-party], type: select }
+    - { name: third-party-to-us, type: relay, proxies: [third-party-select, ss] }
+    - { name: hust-to-us, type: relay, proxies: [hust-select, ss] }
+    - { name: shanghai-to-us, type: relay, proxies: [shanghai, hust-select] }
+    - { name: shiyan-to-us, type: relay, proxies: [shiyan, hust-select] }
 
 rules:
     - 'IP-CIDR,162.159.245.133/32,DIRECT'
